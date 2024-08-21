@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetCode - Login</title>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>    
+
+<body class="login">
+    
+    <div class="slo">
+        <h1 class="sloo">Empowering Innovation – Welcome to JetCode Solutions</h1>
+    </div>
+   
+   
+    <div class="login-container">
+        <h1>Welcome to JetCode</h1>
+        <form id="login-form" action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+    </div>
+
+    <div class="signup-container" id="signup-container">
+        <h1>Create Your JetCode Account</h1>
+        <form id="signup-form" action="signup.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Sign up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 60px;
+    margin-right: 10px;
+  }
+  
+  .nav-links, .nav-actions {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li, .nav-actions li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a, .nav-actions a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover, .nav-actions a:hover {
+    color: #007bff;
+  }
+  
+  .nav-actions a {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  .careers-intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+   
+  }
+  
+  .careers-intro h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #CE2232;
+    
+  
+  }
+  
+  .careers-intro p {
+    font-size: 1.2em;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .view-roles-btn {
+    background-color: #CE2232;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-roles-btn:hover {
+    background-color: #0974B0; 
+  }
+  
+  .figures {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  .figures img {
+    width: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .figures img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .job-opportunities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .job-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .job-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .job-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .job-card span {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+ 
+  .cant-find {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .cant-find h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #CE2232;
+  }
+  
+  .cant-find p {
+    font-size: 1.2em;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .register-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #0974B0; 
+  }
+  
+ 
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.footer-links {
+  margin-bottom: 15px; 
+}
+
+.footer-links a {
+  margin: 0 15px; 
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0056b3; 
+}
+
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0974B0;
+  transform: scale(1.1);
+}
+
+  
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      margin-left: 0;
+      flex-direction: column;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .job-opportunities {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .figures img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 10px 15px;
+    }
+  
+    .job-opportunities {
+      grid-template-columns: 1fr;
+    }
+  
+    .figures img {
+      width: 100%;
+    }
+  
+    .view-roles-btn, .register-btn {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    .careers-intro h2, .cant-find h2 {
+      font-size: 2em;
+    }
+  }
+  
